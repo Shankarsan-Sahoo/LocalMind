@@ -30,6 +30,10 @@ export const useSettingsStore = create<SettingsState>((set, get) => ({
   
   loadSettings: async () => {
     let stored = await db.settings.get(1);
+    if (stored && stored.systemPrompt && stored.systemPrompt.includes('Connecto AI')) {
+      stored.systemPrompt = stored.systemPrompt.replace(/Connecto AI/g, 'LocalMind');
+      await db.settings.put(stored);
+    }
     if (!stored) {
       stored = { ...defaultSettings, id: 1 };
       await db.settings.put(stored);
