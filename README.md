@@ -1,6 +1,7 @@
 # LocalMind 🧠
 
-![LocalMind](public/favicon.ico)
+![LocalMind Chat Demo](image%20copy%202.png)
+![LocalMind Downloading Demo](image%20copy.png)
 
 **LocalMind** is a production-grade, privacy-first AI chatbot that runs **100% offline directly in your web browser**. By leveraging WebGPU and the WebLLM engine, LocalMind downloads quantized open-source models (like Llama 3 and Mistral) directly to your local device and executes them using your own hardware. 
 

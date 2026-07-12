@@ -26,7 +26,7 @@ export default function MessageBubble({ message, isStreaming }: MessageBubblePro
         
         <div className="flex-1 min-w-0">
           <div className="font-semibold text-gray-800 dark:text-gray-200 mb-1 flex items-center gap-2">
-            {isUser ? "You" : "Connecto AI"}
+            {isUser ? "You" : "LocalMind"}
             {isStreaming && <span className="flex gap-1">
               <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce"></span>
               <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce delay-100"></span>
